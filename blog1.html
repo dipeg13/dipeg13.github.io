@@ -13,7 +13,6 @@
             width: 90%;         /* Set a specific width */
             margin-left: auto;   /* Automatically calculate left margin */
             margin-right: auto;  /* Automatically calculate right margin */
-            /* background-color: lightgray; */
             padding: 10px;
         }
     </style>
@@ -36,7 +35,16 @@
 
         <p>One of the most commonly used clustering algorithms is K-Means. Given a distance metric
             \( d:\mathcal{X}\times\mathcal{X}\rightarrow\mathbb{R}_+ \), K-Means groups the data points of
-            \( \mathcal{X} \) in K-groups.</p>
+            \( \mathcal{X} \) in K-groups. Below we describe the basic K-Means algorithm
+
+            \[
+            \begin{algorithmic}[1]
+                \STATE \mathcal{C} =\{ C_1,\ldots, C_K \} \gets Initialize centroids
+                \FOR{ \( i=1,\ldots,n\) }
+                    \STATE Assign every data point \vec{x}_j\in\mathcal{X} to the cluster that corresponds to the closest C_i, with respect to d
+                    \STATE Update clusters' centroids as C_i = \frac{1}{|C_i|} \sum_{\vec{x}_j\in C_i} x_j
+            \end{algorithmic}
+            \]</p>
         <a href="index.html" class="btn btn-primary">Back to Blog</a>
     </div>
 </body>
