@@ -38,13 +38,13 @@
             \( \mathcal{X} \) in K-groups. Below we describe the basic K-Means algorithm:
         </p>
 
-        <ol>
+        <pre>
             <li>\( \mathcal{C} =\{ C_1,\ldots, C_K \} \leftarrow \) Initialize centroids</li>
-            <li>For \( i=1,\ldots,n \)</li>
-            &#9; <li>Assign every data point \( \vec{x}_j\in\mathcal{X} \) to the cluster that corresponds to the closest \( C_i \), with respect to \( d \)</li>
-            &#9; <li>Update clusters' centroids as \( C_i = \frac{1}{|C_i|} \sum_{\vec{x}_j\in C_i} x_j \)</li>
+            <li>For \( i=1,\ldots,n \):</li>
+            <li>    Assign every data point \( \vec{x}_j\in\mathcal{X} \) to the cluster that corresponds to the closest \( C_i \), with respect to \( d \)</li>
+            <li>    Update clusters' centroids as \( C_i = \frac{1}{|C_i|} \sum_{\vec{x}_j\in C_i} x_j \)</li>
 
-        </ol>
+        </pre>
         <a href="index.html" class="btn btn-primary">Back to Blog</a>
     </div>
 </body>
