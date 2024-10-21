@@ -10,8 +10,9 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         .content {
-            margin-left: 50px;  /* Left margin of 50px */
-            margin-right: 50px; /* Right margin of 50px */
+            width: 50%;         /* Set a specific width */
+            margin-left: auto;   /* Automatically calculate left margin */
+            margin-right: auto;  /* Automatically calculate right margin */
             background-color: lightgray;
             padding: 10px;
         }
@@ -22,6 +23,7 @@
         <h2 style="text-align: center;">The K-Means Algorithm</h2>
 
         <p>Date: October 18, 2024</p>
+
         <p>
             Clustering is the machine learning task that is seeks to group data points into clusters, based on a
             similarity measure. The basic difference between clustering and classification, is the fact that clustering,
@@ -31,7 +33,10 @@
             \), the goal of classification is to estimate the map \( f:\mathcal{X}\rightarrow\mathcal{L} \). On the
             other hand, in clustering, no such \( \mathcal{L} \) set of ground truth exists.
         </p>
-        <p>One of the most commonly used clustering algorithms is K-Means.</p>
+
+        <p>One of the most commonly used clustering algorithms is K-Means. Given a distance metric
+            \( d:\mathcal{X}\times\mathcal{X}\rightarrow\mathbb{R}_+ \), K-Means groups the data points of
+            \( \mathcal{X} \) in K-groups.</p>
         <a href="index.html" class="btn btn-primary">Back to Blog</a>
     </div>
 </body>
