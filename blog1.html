@@ -40,8 +40,8 @@
             main objective ok the K-Means algorithm is to minimize the within-cluster sum of squares (WCSS)
             <p style="text-align: center;">\( \displaystyle
             \arg\min_{\mathcal{C} = \{C_1,\ldots,C_K \}} \sum_{j=1}^n \sum_{x_j\in C_i} d(x_j, \mu_i ) \)</p>
-            Below we describe the basic algorithm to find K-Means' clusters:
-        </p>
+
+        Below we describe the basic algorithm to find K-Means' clusters:
 
         <ol>
             <li>\( \mathcal{C} =\{ C_1,\ldots, C_K \} \leftarrow \) Initialize centroids</li>
@@ -50,6 +50,14 @@
             <li>&nbsp;&nbsp;Update clusters' centroids as \( \displaystyle C_i = \frac{1}{|C_i|} \sum_{\vec{x}_j\in C_i} x_j \)</li>
 
         </ol>
+
+        One can observe that K-Means comes along with some parameters. More precisely, the most important parameters
+        are K and d. K refers to the number of clusters to be formed and d to the distance metric used. K-Means, as a
+        centroid-based clustering algorithm is strongly dependent on the metric d used, so different distance metrics
+        may produce completely different clusters. The most commonly used metric is the 2-norm
+        <p style="text-align: center;">\( \displaystyle d(x,y) = \sqrt{ \sum_{i=1}^s (x_i - y_i)^2 },\ \forall x,y\in\mathbb{R}^s \)</p>
+
+        </p>
         <a href="index.html" class="btn btn-primary">Back to Blog</a>
     </div>
 </body>
