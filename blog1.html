@@ -34,8 +34,12 @@
         </p>
 
         <p>One of the most commonly used clustering algorithms is K-Means. Given a distance metric
-            \( d:\mathcal{X}\times\mathcal{X}\rightarrow\mathbb{R}_+ \), K-Means groups the data points of
-            \( \mathcal{X} \) in K-groups. Below we describe the basic K-Means algorithm:
+            \( d:\mathcal{X}\times\mathcal{X}\rightarrow [0,+\infty ) \), K-Means groups the data points of
+            \( \mathcal{X} \) in K-groups \( \mathcal{C} = \{ C_1,\ldots,C_K \} \). Every cluster \( C_i\in\mathcal{C} \)
+            is associated with a vector \( \mu_i \in\mathbb{R}^s \), where \( \mathcal{X}\subset\mathbb{R}^s \). The
+            main objective ok the K-Means algorithm is to minimize the within-cluster sum of squares (WCSS)
+            \( \displaystyle \arg\min_{\mathcal{C} = \{C_1,\ldots,C_K \} \sum_{j=1}^n \sum_{x_j\in C_i} d(x_j, \mu_i )\),
+            where \( \mu_i \) is the centroid of cluster \( C_i \). Below we describe the basic K-Means algorithm:
         </p>
 
         <ol>
